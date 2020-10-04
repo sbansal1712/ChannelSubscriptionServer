@@ -5,9 +5,10 @@ const UserSchema = new mongoose.Schema(
   {
     Username: { type: String, unique : true },
     Password: { type: String },
-    FullName: { type: String },
+    FirstName : {type : String},
+    LastName : {type : String},
     Channels : [{type : mongoose.Schema.Types.Mixed}]
-   
+    
   },
   { collection: "Mst_Users" }
 );
